@@ -229,3 +229,7 @@ cl <- makeCluster(8, type = "MPI")
 system.time(parLapply(cl, x1, qsort))
 stopCluster(cl)
 mpi.exit()  # or mpi.quit(), which quits R as well
+
+> system.time(parLapply(cl, x1, qsort))
+user  system elapsed 
+1.141   0.009   1.220 
