@@ -5,12 +5,17 @@ test Sorting algorithm and parallel computing in R
 1. Quick Sort
 ref:
 
+QuickSort algorithm: 
+
 https://zh.wikipedia.org/zh-tw/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F
+
+Parallel computing in R:
 
 http://www.stats.uwo.ca/faculty/yu/Rmpi/ 
 
 http://www.uio.no/english/services/it/research/hpc/courses/r/2013-04_parallel_r.pdf
 
+<div>
 
 time:
 x1 = sample(50000)
@@ -60,3 +65,4 @@ mpi.exit()  # or mpi.quit(), which quits R as well
 <<<<<<< HEAD
 user  system elapsed 
 1.141   0.009   1.220 
+</div>
