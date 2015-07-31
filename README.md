@@ -11,10 +11,9 @@ https://zh.wikipedia.org/zh-tw/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F
 
 Parallel computing in R:
 http://www.stats.uwo.ca/faculty/yu/Rmpi/ 
-http://www.uio.no/english/services/it/research/hpc/courses/r/2013-04_parallel_r.pdf
 
 
-## time:
+## time: Single thread:
 x1 = sample(50000)
 > system.time(sort(x1))
 user  system elapsed 
@@ -22,6 +21,7 @@ user  system elapsed
 > system.time(qsort(x1))
 user  system elapsed 
 19.535   9.867  29.557 
+## time: parallel 
 > system.time(lapply(x1,qsort))
 user  system elapsed 
 2.943   0.012   2.956 
